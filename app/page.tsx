@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="text-center p-10">
@@ -6,9 +8,16 @@ export default function Home() {
       <p className="mt-4 text-lg">
         Découvre mes articles sur le développement web et le cloud.
       </p>
+      <Link
+        href="/blog"
+        className="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+      >
+        Voir les articles
+      </Link>
     </div>
   );
 }
+
 
 
 // export default function Home() {
